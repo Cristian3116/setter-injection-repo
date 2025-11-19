@@ -1,4 +1,11 @@
 package pixel.academy.setter_injection_app.common;
 
-public class MexicanChef {
+import org.springframework.stereotype.Component;
+
+@Component
+public class MexicanChef implements Chef {
+    @Override
+    public String getDailyRecipe(){
+        return "Preparo tacos";
+    }
 }

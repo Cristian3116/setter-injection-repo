@@ -1,4 +1,11 @@
 package pixel.academy.setter_injection_app.common;
 
-public class TurkishChef {
+import org.springframework.stereotype.Component;
+
+@Component
+public class TurkishChef  implements Chef{
+    @Override
+    public String getDailyRecipe() {
+        return "Prepararea kebab si lucum";
+    }
 }
